@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>carrito de la compra</title>
+	<link rel="stylesheet" href="assets/css/uikit.min.css" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit.min.js"></script>
+	<script src="app/main.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<button class="carritoicon" id="toggleButton"><span class="material-symbols-outlined">person</span></button>
+		<button class="carritoicon" id="mostrarBtn"><span class="material-symbols-outlined">shopping_cart</span>
+			<div id="elementosencarrito"></div>
+		</button>
+
+	</header>
+	<main class="main">
+		<div class="uk-background-fixed uk-background-center-center uk-height-medium uk-width-large"
+			style="background-image: url(assets/images/Flowers6158e.jpg);"></div>
+
+		<div class="container" id="productContainer">
+			<div class="card" data-index="0">
+				<img src="assets/images/flor1.jpg" alt="Producto 1">
+				<div class="info">
+					<div class="details">
+						<h3>Magarita</h3>
+						<p>10.50€</p>
+					</div>
+					<div class="icons">
+						<button class="ver_detalles-btn iconcard"><span
+								class="material-symbols-outlined">info</span></button>
+						<button class="iconcard" id="añadirAlCarrito"><span
+								class="material-symbols-outlined">shopping_cart</span></button>
+					</div>
+				</div>
+
+			</div>
+			<div class="card" data-index="1">
+				<img src="assets/images/flor2.jpg" alt="Producto 1">
+				<div class="info">
+					<div class="details">
+						<h3>Azucena</h3>
+						<p>11.50€</p>
+					</div>
+					<div class="icons">
+						<button class="ver_detalles-btn iconcard"><span
+								class="material-symbols-outlined">info</span></button>
+						<button class="iconcard" id="añadirAlCarrito"><span
+								class="material-symbols-outlined">shopping_cart</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="card" data-index="2">
+				<img src="assets/images/flor3.jpg" alt="Producto 1">
+				<div class="info">
+					<div class="details">
+						<h3>Azalea</h3>
+						<p>12.50€</p>
+					</div>
+					<div class="icons">
+						<button class="ver_detalles-btn iconcard"><span
+								class="material-symbols-outlined">info</span></button>
+						<button class="iconcard" id="añadirAlCarrito"><span
+								class="material-symbols-outlined">shopping_cart</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="card" data-index="3">
+				<img src="assets/images/flor4.jpg" alt="Producto 1">
+				<div class="info">
+					<div class="details">
+						<h3>Dalia</h3>
+						<p>13.50€</p>
+					</div>
+					<div class="icons">
+						<button class="ver_detalles-btn iconcard"><span
+								class="material-symbols-outlined">info</span></button>
+						<button class="iconcard" id="añadirAlCarrito"><span
+								class="material-symbols-outlined">shopping_cart</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="card" data-index="4">
+				<img src="assets/images/flor5.jpg" alt="Producto 1">
+				<div class="info">
+					<div class="details">
+						<h3>Hortensia</h3>
+						<p>14.50€</p>
+					</div>
+					<div class="icons">
+						<button class="ver_detalles-btn iconcard"><span
+								class="material-symbols-outlined">info</span></button>
+						<button class="iconcard" id="añadirAlCarrito"><span
+								class="material-symbols-outlined">shopping_cart</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="card" data-index="5">
+				<img src="assets/images/flor6.jpg" alt="Producto 1">
+				<div class="info">
+					<div class="details">
+						<h3>Lirio</h3>
+						<p>15.50€</p>
+					</div>
+					<div class="icons">
+						<button class="ver_detalles-btn iconcard"><span
+								class="material-symbols-outlined">info</span></button>
+						<button class="iconcard" id="añadirAlCarrito"><span
+								class="material-symbols-outlined">shopping_cart</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="card" data-index="6">
+				<img src="assets/images/flor7.jpg" alt="Producto 1">
+				<div class="info">
+					<div class="details">
+						<h3>Hibisco</h3>
+						<p>16.50€</p>
+					</div>
+					<div class="icons">
+						<button class="ver_detalles-btn iconcard"><span
+								class="material-symbols-outlined">info</span></button>
+						<button class="iconcard" id="añadirAlCarrito"><span
+								class="material-symbols-outlined">shopping_cart</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="card" data-index="7">
+				<img src="assets/images/flor8.jpg" alt="Producto 1">
+				<div class="info">
+					<div class="details">
+						<h3>Bugambilia</h3>
+						<p>17.50€</p>
+					</div>
+					<div class="icons">
+						<button class="ver_detalles-btn iconcard"><span
+								class="material-symbols-outlined">info</span></button>
+						<button class="iconcard" id="añadirAlCarrito"><span
+								class="material-symbols-outlined">shopping_cart</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="galery">
+			<img id="caja" src="assets/images/galeria.jpg" alt="Main picture">
+			<div class="controles">
+				<button id="izq"><span class="material-symbols-outlined">
+						chevron_left
+					</span></button>
+				<section class="caja_mini">
+					<img class="mini active" src="assets/images/galeria.jpg" alt="picture1" data-num="0">
+					<img class="mini" src="assets/images/galeria1.jpg" alt="picture2" data-num="1">
+					<img class="mini" src="assets/images/galeria2.jpg" alt="picture3" data-num="2">
+					<img class="mini" src="assets/images/galeria3.jpg" alt="picture4" data-num="3">
+					<img class="mini" src="assets/images/galeria4.jpg" alt="picture5" data-num="4">
+				</section>
+				<button id="drch"><span class="material-symbols-outlined">
+						chevron_right
+					</span></button>
+			</div>
+		</div>
+		<div id="detallesModal" class="modal">
+			<div class="modal-content">
+				<div class="popup-header">
+					<button class="close-button" id="closeButton">
+						<span class="material-symbols-outlined">close</span>
+					</button>
+				</div>
+				<div class="popup-content">
+					<div class="detalle-info">
+						<img id="modalImg" alt="">
+						<div class="detalle-info-text">
+							<div>
+								<p class="tituloDetalle" id="modalTitle"></p>
+								<p id="modalPrice"></p>
+							</div>
+
+							<div>
+								<button class="iconcard" id="añadirAlCarritoModal"><span
+										class="material-symbols-outlined">shopping_cart</span></button>
+								<button class="iconcard material-symbols-outlined">favorite</button>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ventanaEmergente" class="ventana">
+			<div class="contenido">
+				<span id="cerrarBtn">&times;</span>
+				<h4>Carrito de la compra</h4>
+				<div class="carritoLista" id="carritoLista">
+				</div>
+			</div>
+			<div class="precioTotalCarrito">Total precio <span id="precioTotalCarrito">0€</span></div>
+		</div>
+
+		<div id="sidePanel" class="side-panel">
+			<ul id="list">
+				<li>Area de socio</li>
+				<li>Perfil</li>
+				<li>Mis favoritos</li>
+				<li>Mis pedidos</li>
+			</ul>
+		</div>
+
+		<script src="app/script.js"></script>
+
+	</main>
+	<footer>
+		<footer>
+			<div class="footer-container">
+				<div class="social-links">
+					<a href="#" target="_blank">Facebook</a>
+					<a href="#" target="_blank">Twitter</a>
+					<a href="#" target="_blank">Instagram</a>
+				</div>
+				<div class="footer-form">
+					<h3>Contacto</h3>
+					<form>
+						<label for="email">Correo electrónico:</label>
+						<input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+						<button type="submit">Suscribirse</button>
+					</form>
+				</div>
+				<div class="footer-links">
+					<a href="#">Página Principal</a>
+					<a href="#">Productos</a>
+					<a href="#">Servicios</a>
+				</div>
+			</div>
+		</footer>
+	</footer>
+
+</body>
+
+</html>

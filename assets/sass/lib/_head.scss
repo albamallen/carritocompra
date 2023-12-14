@@ -1,0 +1,88 @@
+header {
+    // background-color: #5A1315;
+    background-color: black;
+    color: white;
+    // margin-top: 12px;
+    margin-right: 3000px;
+    padding: 10px;
+    text-align: right;
+}
+
+// user
+
+.overlayListaUser {
+    position: fixed;
+    top: 0;
+    right: 100%; /* Inicialmente fuera de la pantalla */
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 998;
+    margin-top: 60px;
+  }
+  
+  .popupLista {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+  }
+  
+  .popupLista ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .popupLista li {
+    padding: 5px;
+    border-bottom: 1px solid white;
+  }
+  
+  .popupLista button {
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  .cerrarListas{
+    background-color: transparent;
+  }
+  
+
+// carrito
+
+.carrito-container {
+  
+    top: 70px;
+    right: -300px; /* Inicialmente oculto */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+  
+.carrito-content {
+    padding: 20px;
+}
+
+.carritoicon{
+    border-style: none;
+    background-color: transparent;
+    color: #fff;
+    margin-right: 30px;
+    margin-top: 25px;
+}
+  
+.close-button {
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+

@@ -1,0 +1,52 @@
+h1{
+   margin: calc(1ex / 0.50) ;
+    font-size: 2.3em ;
+    line-height: calc(1ex / 0.42) ;
+    font-family: 'Anybody', sans-serif;
+      
+}
+    
+
+h2 {
+    font-size: 2em ;
+    line-height: calc(1ex / 0.42) ;
+    margin: calc(1ex / 0.42) 0 ;
+    font-family: 'Anybody', sans-serif;
+    font-weight: bold;
+
+} 
+    
+ 
+h3 {
+   font-size: 1.75em ;
+    line-height: calc(1ex / 0.38) ;
+    margin: calc(1ex / 0.38) 0 ;
+    font-family: 'Anybody', sans-serif;
+    font-weight: bold;
+ 
+} 
+    
+h4 {
+    font-size: 1.2em ;
+    line-height: calc(1ex / 0.37) ;
+    margin:2px;
+    font-family: 'Anybody', sans-serif;
+    margin-left: 30px;
+} 
+     
+ 
+
+p {
+   font-size: 1em ;
+    line-height: calc(1ex / 0.32) ;
+    margin: 0  ;
+    font-family: 'Anybody', sans-serif;
+    font-weight: 300;
+} 
+    
+
+
+.material-symbols-outlined{
+    font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;
+}
+  

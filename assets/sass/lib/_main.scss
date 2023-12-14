@@ -1,0 +1,316 @@
+h1{
+    text-align: center;
+}
+.caja{
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+.caja_mini{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+    .mini{
+         width: 30px;
+        height: 30px;
+        margin: 2px;
+        border-radius: 25px;
+        filter: grayscale(100%);
+        &.active{
+            border: 2px solid red;
+            filter: grayscale(0%);
+        }
+    }
+            
+       
+}
+    
+.controles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #izq,#drch{
+         width: 30px;
+        height: 30px;
+        margin: 2px;
+        border-radius: 25px;
+        border: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+
+
+
+// foto inicial
+
+.uk-height-medium {
+  height: 1000px;
+  width: 100%;
+}
+
+.uk-background-center-center {
+  background-position: 30% 50%;
+}
+
+
+//pruebas ards
+
+.container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%; /* Ajusta según sea necesario */
+  margin: 20px;
+}
+
+.card {
+  position: relative;
+  width: 350px; /* Ajusta según sea necesario */
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconcard{
+  border: 0px;
+  background-color: transparent;
+}
+
+.details h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 2vw;
+  left: 25vw;
+  width: 50%;
+  max-height: 60%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  min-width: 228px;
+
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  height: 135%;
+  min-width: 350px;
+}
+
+@media (max-width: 1190px) {
+  .modal {
+    display: none;
+    position: fixed;
+    top: 2vw;
+    left: 10vw;
+    width: 50%;
+    max-height: 60%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    min-width: 228px;
+  }
+}
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.detalle-info {
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  img{
+    width: 70%;
+    border-radius: 50px;
+  }
+  .tituloDetalle{
+    font-weight: 600;
+    color: #5A1315;
+  }
+  .detalle-info-text{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+
+//carrito
+
+.ventana {
+  position: fixed;
+  top: 0px;
+  right: -600px; /* Inicialmente fuera de la pantalla */
+  width: 420px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3000;
+}
+
+.contenido {
+  padding: 20px;
+  color: #5A1315;
+  margin-right: 20px;
+  align-items: center;
+  .carritoLista{
+    list-style: none;
+    padding: 0;
+    
+    .itemcarrito{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid #5A1315;
+      margin-top: 10px;
+    }
+  }
+  .texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  h4{
+    padding: 10px;
+  }
+  img{
+    width: 60px;
+    height: 60px;
+    border-radius: 1600px;
+    padding: 5px;
+  }
+  button{
+    border-radius: 50px;
+    margin: 10px;
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+    color:#5A1315;
+    border: 1px solid #5A1315;
+    align-items: center;
+    justify-content: center;
+  }
+  .cantidad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+#cerrarBtn {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 70px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.precioTotalCarrito{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  color: #333;
+  border-top: 1px solid #5A1315;
+}
+
+
+// user
+
+.side-panel {
+  position: fixed;
+  margin-top: 100px;
+  top: 0;
+  right: -250px;
+  width: 200px;
+  height: 179px;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  transition: right 0.3s ease;
+  padding: 0px;
+  ul{
+    list-style: none;
+    padding: 0px;
+  }
+}
+
+.buttonUser, #list li {
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border: none;
+  background-color: transparent;
+  color: #5A1315;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #5A1315;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonUser:hover, #list li:hover {
+  background-color: #5A1315;
+  color: #fff;
+}

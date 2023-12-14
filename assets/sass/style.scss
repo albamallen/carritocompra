@@ -1,0 +1,56 @@
+@import "lib/_main.scss";
+@import "lib/_type.scss";
+@import "lib/_vars.scss";
+@import "lib/_head.scss";
+@import "lib/_footer.scss";
+
+
+body{
+    display: grid;
+    font-family: 'Anybody', sans-serif;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+    "head" 
+    "main"
+    "footer";
+    grid-template-rows: 70px 1fr 700px;
+    
+    @media(max-width: 1070px){
+        grid-template-areas: 
+        "head" 
+        "main"
+        "footer";
+        grid-template-rows: 70px 1fr 700px;
+    }
+        
+
+}
+   
+header{
+    background-color: #5A1315;
+    color: white;
+    // padding: 10px;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    grid-area: head;
+}
+.main{
+
+    background-color: white;
+    grid-area: main;
+}
+
+footer {
+    height: 200px;
+    background-color: #5A1315;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    grid-area: footer;
+}
